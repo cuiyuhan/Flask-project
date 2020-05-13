@@ -34,7 +34,7 @@ def assignments():
 #static route
 @app.route("/classes/")
 def classes():
-    return "classes page"
+    return render_template("classes.html")
 
 #start the server
 if __name__ == "__main__":
