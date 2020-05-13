@@ -26,6 +26,16 @@ def exercise():
 def index():
     return render_template("main.html")
 
+#static route
+@app.route("/assignments")
+def assignments():
+    return render_template("assignment.html")
+
+#static route
+@app.route("/classes")
+def classes():
+    return "classes page"
+
 #start the server
 if __name__ == "__main__":
     app.run()
