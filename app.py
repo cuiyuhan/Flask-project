@@ -27,12 +27,12 @@ def index():
     return render_template("main.html")
 
 #static route
-@app.route("/assignments")
+@app.route("/assignments/")
 def assignments():
-    return render_template("assignment.html")
+    return render_template("assignments.html")
 
 #static route
-@app.route("/classes")
+@app.route("/classes/")
 def classes():
     return "classes page"
 
