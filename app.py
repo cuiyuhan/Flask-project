@@ -12,7 +12,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 #static route
-@app.route("/")
+@app.route("/hello")
 def hello():
     return render_template("index.html")
 
@@ -20,6 +20,11 @@ def hello():
 @app.route("/1006")
 def exercise():
     return "1006 homepage"
+
+#static route
+@app.route("/")
+def index():
+    return render_template("main.html")
 
 #start the server
 if __name__ == "__main__":
